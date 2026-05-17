@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(rgb(8, 3, 3),rgb(9, 4, 4));
+}
+nav{
+    height: 40px;
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    gap: 50px;
+
+}
+.left{
+    display: flex;
+    
+   
+}
+
+.left img{
+    height: 40px;
+    width: px;
+    margin-right:10px ;
+    border-radius: 50% ;
+}
+p:hover{
+    color:rgb(245, 101, 4); 
+    cursor: pointer;
+    text-shadow: 0px 0px 30px rgba(245, 100, 4, 0.9) ;
+    transition: all 0.6s ease;
+}
+
+#tag{
+    display: flex;
+    background-color:rgba(132, 131, 131, 0.104);
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    gap: 10px;
+}
+.left p{
+    border-left: 2px solid;
+    padding-left: 10px ;
+    padding-bottom: px;
+    
+}
+.right{
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.right img{
+    height: 40px;
+    border-radius: 50% ;
+    
+}
+
+#hero-text{ 
+    height: 70vh;
+    padding-left: 50px; 
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* margin-bottum: 300px ; */
+}
+#hero-text h3{
+    color: rgb(242, 104, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 10vh;
+}
+
+#hero-text h1{
+    height: 20vh;
+    font-size:8vh;
+}
+#bada{
+    border: 2px solid #ff7b42;
+    padding: 5px 20px;
+    background-color: rgba(255,123,66,0.1);
+
+}
+.join{
+    margin-top: 50px ;
+    font-size:20px ;
+    font-weight: 100;
+    margin-bottom: 40px;
+
+
+}
+#chota{
+    color:#ff7b42 ;
+}
+#hero-text h4{
+    font-size: 16px;
+    height: 60px;
+    font-weight: 100;
+}
+#but{
+    font-size: 16px;
+    background-color: #ff7b42;
+    border-radius: 30px;
+    height: 50px;
+    width: 150px ;
+    border: none;
+    margin-left: 42vw;
+}
+#but:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 30px rgba(249, 151, 5, 3.937) ;
+    transition: all 1s ease-in-out;
+
+}
+.page1{
+    height: 100%;
+    width: 100%;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    padding: 150px 100px;
+
+}
+#grid{
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px  30px;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+"top-left top-center right"
+"bottum-left bottum-left right";
+    gap: 10px;
+    object-fit: cover;
+    padding: 100px 80px;
+
+}
+.top-left{
+    grid-area: top-left;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.top{
+    display: flex;
+
+}
+.top h1{
+    width: 50px;
+    height: 15px;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left:10px;
+    color: #ff7b42;
+}
+.top span{
+    padding-top: 100px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+    font-weight: 100;
+
+}
+.bottum{
+    font-size:16px;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+.top img{
+    height: 80px;
+    padding-left: 20px;
+}
+.top-center{
+    grid-area: top-center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.top-center h1{
+    font-size: 40px;
+    color: #ff7b42;
+    padding-left: 70px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.top-center p{
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 150px;
+}
+.right-top h1{
+    padding-top: 10px;
+    padding-left: 15px;
+    position: absolute;
+}
+
+
+.right-top{
+    grid-area: right;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+}
+.right-top button{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ff7b42;
+    border-radius: 10px;
+    height: 40px;
+    position: absolute;
+    bottom: 30px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.bottum-left{
+    grid-area: bottum-left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+}
+.bottum-left h1{
+    font-size: 35px;
+    font-weight: 100;
+    line-height: 60px;
+    margin-left: 10px;
+
+}
+.bottum-left i{
+    width: 60px;
+    height: 10px;
+    border: 2px solid #ff7b42;
+    padding: 5px 20px;
+    background-color: rgba(12, 12, 12, 0.1);
+    border-radius: 30px;
+    line-height: 10px;
+
+    
+}
